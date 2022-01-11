@@ -12,7 +12,6 @@ void main(List<String> arguments) {
   checkArguments(arguments);
   try {
     File file = File(arguments[0]);
-
     List<String> lines = file.readAsLinesSync();
     List<int> numbers = [];
     for (var element in lines) {
